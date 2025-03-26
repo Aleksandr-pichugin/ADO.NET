@@ -23,7 +23,13 @@ namespace Academy
 				ConfigurationManager.ConnectionStrings["PV_319_Import"].ConnectionString
 				);
 			//dgv- DataGridView
-			dgvStudents.DataSource = connector.Select("*", "Students");
+			dgvStudents.DataSource		= connector.Select("*", "Students");
+			dgvGroups.DataSource		= connector.Select("*", "Groups");
+			dgvDirections.DataSource	= connector.Select("*", "Directions");
+			dgvDisciplines.DataSource	= connector.Select("*", "Disciplines");
+			dgvTeachers.DataSource		= connector.Select("*", "Teachers");
 		}
+
+		
 	}
 }
