@@ -28,8 +28,8 @@ namespace Academy
 			dgvDirections.DataSource	= connector.Select("*", "Directions");
 			dgvDisciplines.DataSource	= connector.Select("*", "Disciplines");
 			dgvTeachers.DataSource		= connector.Select("*", "Teachers");
+
 		}
 
-		
 	}
 }

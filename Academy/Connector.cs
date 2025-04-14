@@ -10,6 +10,7 @@ using System.Data;
 
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Windows.Forms;
 
 namespace Academy
 {
@@ -24,6 +25,7 @@ namespace Academy
 			connection = new SqlConnection(connection_string);
 			AllocConsole();
 			Console.WriteLine(CONNECTION_STRING);
+			
 		}
 		~Connector()
 		{
